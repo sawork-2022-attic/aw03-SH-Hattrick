@@ -7,7 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class Product {
     private String id;
-    private String name;
+    public String name;
     private double price;
     private String image;
 
@@ -16,4 +16,5 @@ public class Product {
         return getId() + "\t" + getName() + "\t" + getPrice();
     }
 
+    public String getProductName(){return name;}
 }

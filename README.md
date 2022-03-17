@@ -1,21 +1,3 @@
-# WebPOS
+MVC模式将视图将可视化界面和业务逻辑分离，实现了更好的代码扩展性。
 
-The demo shows a simple POS system in MVC architecture, which replaces the shell interface in aw02 with a pos web ui (https://github.com/bshbsh404/simple-pos-ui
-).
-
-![](screenshot.png)
-
-To run
-
-```shell
-mvn clean spring-boot:run
-```
-
-Currently, it just lists the products for sale with a cart with one item (just for demonstration). 
-
-Please read the tutorial at  https://www.baeldung.com/spring-boot-crud-thymeleaf and make the POS system robust and fully functional. You can also refer to other articles, for instance https://www.baeldung.com/tag/thymeleaf/ .
-
-
-
-And please elaborate your understanding in MVC architecture via this homework in your README.md.
-
+View层是界面，Model层是业务逻辑，Controller层用来调度View层和Model层，将用户界面和业务逻辑合理的组织在一起，起粘合剂的效果。控制器做到的功能越少，项目代码的耦合性越低。
